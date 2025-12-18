@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+.pnpm-debug.log*
+bower_components
+
+# Build outputs
+dist/
+dist-ssr/
+*.tsbuildinfo
+
+# Runtime data
+*.log
+
+# Environment variables
+.env
+.env.production
+.env.*.local
+
+# IDE/Editor
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+coverage/
+.nyc_output/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Astro
+astro-*.db

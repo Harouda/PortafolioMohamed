@@ -1,0 +1,29 @@
+---
+import DefaultLayout from '../layouts/DefaultLayout.astro';
+import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
+import Skills from '../components/Skills.astro';
+import Contact from '../components/Contact.astro';
+import { projects } from '../data/projects';
+import ProjectCard from '../components/ProjectCard.vue';
+---
+
+<DefaultLayout title="Portafolio - Desarrollador Web · En busca de practicas">
+  <Hero
+    title="Técnico en desarrollo web."
+    subtitle="Soy estudiante de DAW: diseño y construyo aplicaciones full-stack, con foco en APIs seguras y UIs mantenibles. Aquí muestro proyectos reales."
+  />
+
+  <section id="projects" class="py-8">
+    <h2 class="text-2xl font-semibold">Proyectos destacados</h2>
+    <div class="mt-6 grid gap-6 md:grid-cols-2">
+      {projects.map((p) => (
+        <ProjectCard client:load project={p} />
+      ))}
+    </div>
+  </section>
+
+  <About />
+  <Skills />
+  <Contact />
+</DefaultLayout>
