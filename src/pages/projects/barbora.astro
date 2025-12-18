@@ -3,29 +3,33 @@ import DefaultLayout from '../../layouts/DefaultLayout.astro';
 ---
 <DefaultLayout title="Barbora — Caso de estudio">
   <article>
-    <h1 class="text-2xl font-semibold">Barbora — Plataforma de gestión para barberías</h1>
-    <p class="mt-4 text-slate-700">Desarrollé una aplicación full‑stack para gestionar citas, equipos y permisos entre clientes, barberos y administradores.</p>
+    <h1 class="text-2xl font-semibold text-white">Barbora — Plataforma de gestión para barberías</h1>
+    <p class="mt-4 text-white">Desarrollé una aplicación full‑stack para gestionar citas, equipos y permisos entre clientes, barberos y administradores.</p>
 
-    <h2 class="mt-6 font-semibold">Tecnologías</h2>
-    <ul class="list-disc pl-6 mt-2 text-slate-700">
+    <h2 class="mt-6 font-semibold text-white">Tecnologías</h2>
+    <ul class="list-disc pl-6 mt-2 text-white">
       <li>Backend: Laravel — API REST, Sanctum</li>
       <li>Frontend: Vue 3, Vite, Tailwind CSS</li>
       <li>Autenticación: OTP por teléfono (WhatsApp / SMS)</li>
     </ul>
 
-    <h2 class="mt-6 font-semibold">Decisiones clave</h2>
-    <ul class="list-disc pl-6 mt-2 text-slate-700">
+    <h2 class="mt-6 font-semibold text-white">Decisiones clave</h2>
+    <ul class="list-disc pl-6 mt-2 text-white">
       <li>OTP para mejorar conversión y reducir fricción de inicio.</li>
       <li>Roles claros (cliente/barbero/admin/superadmin) para separar flujos y responsabilidades.</li>
       <li>Validación de agenda en backend para prevenir solapamientos y mantener integridad.</li>
       <li>Frontend desacoplado consumiendo API — facilita escalabilidad y pruebas.</li>
     </ul>
 
-    <h2 class="mt-6 font-semibold">Por qué no es un CRUD</h2>
-    <p class="text-slate-700 mt-2">Incluye flujos de negocio como aprobación de barberías, onboarding de barberos, control de conflictos en horarios y reglas de negocio que superan operaciones básicas.</p>
+    <h2 class="mt-6 font-semibold text-white">Por qué no es un CRUD</h2>
+    <p class="text-white mt-2">Incluye flujos de negocio como aprobación de barberías, onboarding de barberos, control de conflictos en horarios y reglas de negocio que superan operaciones básicas.</p>
 
-    <h2 class="mt-6 font-semibold">Enlaces</h2>
-    <p class="mt-2"><a href="#" class="text-sky-600">Repositorio (si está disponible)</a> • <a href="#" class="text-sky-600">Demo / Capturas</a></p>
+    <h2 class="mt-6 font-semibold text-white">Enlaces</h2>
+    <p class="mt-2">
+      <a href="#" class="text-amber-300 hover:text-amber-200">Repositorio (si está disponible)</a>
+      <span class="text-slate-400 mx-2">·</span>
+      <a href="#" class="text-amber-300 hover:text-amber-200">Demo / Capturas</a>
+    </p>
 
     <h2 class="mt-8 font-semibold">Capturas</h2>
     <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
