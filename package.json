@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "optimize-images": "node scripts/optimize-images.js"
   },
   "devDependencies": {
     "@astrojs/tailwind": "^3.0.0",
@@ -18,11 +19,5 @@
   "dependencies": {
     "vue": "^3.0.0",
     "sharp": "^0.32.0"
-  },
-  "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "optimize-images": "node scripts/optimize-images.js"
   }
 }
