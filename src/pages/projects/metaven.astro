@@ -2,18 +2,56 @@
 import DefaultLayout from '../../layouts/DefaultLayout.astro';
 ---
 <DefaultLayout title="Metaven — Caso de estudio">
-  <article>
-    <h1 class="text-2xl font-semibold text-white">Metaven — Sitio web para negocio local</h1>
-    <p class="mt-4 text-white">Sitio estático entregado a cliente real: enfoque en usabilidad, claridad en servicios y adaptabilidad móvil.</p>
+  <article class="text-white space-y-8">
+    <header class="space-y-3">
+      <p class="text-amber-200 text-sm font-semibold uppercase tracking-wide">Web estática · Cliente real</p>
+      <h1 class="text-3xl font-semibold">Metaven — Sitio web para negocio local</h1>
+      <p class="text-slate-200">
+        Rediseñé la web de una empresa de limpieza local para aumentar las consultas y dar confianza. Entregué la versión
+        lista para producción y acompañé al cliente tras el lanzamiento.
+      </p>
+    </header>
 
-    <h2 class="mt-6 font-semibold text-white">Qué tuve que resolver</h2>
-    <ul class="list-disc pl-6 mt-2 text-white">
-      <li>Comunicación con el cliente para definir objetivos.</li>
-      <li>Diseño centrado en conversión (llamadas a la acción visibles).</li>
-      <li>Entrega y despliegue en producción, soporte tras la puesta en marcha.</li>
-    </ul>
+    <section class="space-y-2">
+      <h2 class="text-xl font-semibold">Objetivos del cliente</h2>
+      <ul class="list-disc pl-6 space-y-1 text-slate-100">
+        <li>Explicar servicios y zonas de cobertura de forma clara.</li>
+        <li>Incrementar solicitudes por llamada y formularios.</li>
+        <li>Mostrar la marca como confiable y cercana.</li>
+      </ul>
+    </section>
 
-    <h2 class="mt-6 font-semibold text-white">Enlaces</h2>
-    <p class="mt-2"><a href="https://www.metaven.es" class="text-amber-300 hover:text-amber-200">Sitio en producción</a></p>
+    <section class="space-y-2">
+      <h2 class="text-xl font-semibold">Trabajo realizado</h2>
+      <ul class="list-disc pl-6 space-y-1 text-slate-100">
+        <li>Arquitectura de contenidos y wireframes rápidos validados con el cliente.</li>
+        <li>Diseño responsivo con llamadas a la acción visibles en móvil y escritorio.</li>
+        <li>Optimización de imágenes y texto para SEO local.</li>
+        <li>Implementación estática (HTML + CSS) y despliegue en producción.</li>
+      </ul>
+    </section>
+
+    <section class="space-y-2">
+      <h2 class="text-xl font-semibold">Resultados y aprendizajes</h2>
+      <ul class="list-disc pl-6 space-y-1 text-slate-100">
+        <li>El cliente pudo gestionar el contenido sin depender de terceros.</li>
+        <li>Tiempo de carga por debajo de 1s en escritorio y móvil.</li>
+        <li>Documenté cómo actualizar textos e imágenes para que el negocio siga iterando.</li>
+      </ul>
+    </section>
+
+    <section class="space-y-2">
+      <h2 class="text-xl font-semibold">Stack y herramientas</h2>
+      <ul class="list-disc pl-6 space-y-1 text-slate-100">
+        <li>HTML semántico, CSS, pequeñas animaciones con Tailwind.</li>
+        <li>Auditoría de performance con Lighthouse y ajuste de pesos de imagen.</li>
+        <li>Entrega y despliegue asistido, con soporte post-lanzamiento.</li>
+      </ul>
+    </section>
+
+    <section class="space-y-2">
+      <h2 class="text-xl font-semibold">Enlaces</h2>
+      <p><a href="https://www.metaven.es" class="text-amber-300 hover:text-amber-200">Sitio en producción</a></p>
+    </section>
   </article>
 </DefaultLayout>

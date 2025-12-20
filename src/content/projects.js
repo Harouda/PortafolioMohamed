@@ -1,18 +1,18 @@
 export const projects = [
   {
     id: 'barbora',
-    title: 'Barbora – Plataforma de gestión para barberías',
-    short: 'Aplicación full-stack para gestionar citas, equipos y permisos entre clientes, barberos y administradores.',
+    title: 'Barbora - Plataforma de gestión para barberías',
+    short: 'Aplicación full-stack con agenda validada, roles y autenticación OTP.',
     image: '/images/barbora-hero.svg',
     path: '/projects/barbora',
-    stack: 'Vue · Laravel'
+    stack: 'Vue + Laravel'
   },
   {
     id: 'metaven',
-    title: 'Metaven – Sitio web para negocio local',
-    short: 'Sitio estático entregado a cliente real, con foco en usabilidad y conversión local.',
+    title: 'Metaven - Sitio web para negocio local',
+    short: 'Web estática orientada a conversión y SEO local, lista para producción.',
     image: '/images/metaven-hero.svg',
     path: '/projects/metaven',
-    stack: 'HTML · CSS'
+    stack: 'HTML + CSS'
   }
 ];

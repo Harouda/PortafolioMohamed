@@ -2,64 +2,109 @@
 import DefaultLayout from '../../layouts/DefaultLayout.astro';
 ---
 <DefaultLayout title="Barbora — Caso de estudio">
-  <article>
-    <h1 class="text-2xl font-semibold text-white">Barbora — Plataforma de gestión para barberías</h1>
-    <p class="mt-4 text-white">Desarrollé una aplicación full‑stack para gestionar citas, equipos y permisos entre clientes, barberos y administradores.</p>
+  <article class="text-white space-y-8">
+    <header class="space-y-3">
+      <p class="text-amber-200 text-sm font-semibold uppercase tracking-wide">Aplicación full-stack · Cliente real</p>
+      <h1 class="text-3xl font-semibold">Barbora — Plataforma de gestión para barberías</h1>
+      <p class="text-slate-200">
+        Producto para administrar citas, equipos y permisos. Lideré la arquitectura, el desarrollo de la API y el frontend
+        con foco en seguridad y en flujos sin fricción para barberos y clientes.
+      </p>
+      <div class="grid gap-3 sm:grid-cols-3">
+        <div class="glass rounded p-3">
+          <p class="text-xs uppercase text-slate-300">Rol</p>
+          <p class="font-semibold">Full-stack · Arquitectura · QA manual</p>
+        </div>
+        <div class="glass rounded p-3">
+          <p class="text-xs uppercase text-slate-300">Usuarios</p>
+          <p class="font-semibold">Clientes, barberos, admins y superadmins</p>
+        </div>
+        <div class="glass rounded p-3">
+          <p class="text-xs uppercase text-slate-300">Modelo</p>
+          <p class="font-semibold">SaaS para barberías con onboarding guiado</p>
+        </div>
+      </div>
+    </header>
 
-    <h2 class="mt-6 font-semibold text-white">Tecnologías</h2>
-    <ul class="list-disc pl-6 mt-2 text-white">
-      <li>Backend: Laravel — API REST, Sanctum</li>
-      <li>Frontend: Vue 3, Vite, Tailwind CSS</li>
-      <li>Autenticación: OTP por teléfono (WhatsApp / SMS)</li>
-    </ul>
+    <section class="space-y-2">
+      <h2 class="text-xl font-semibold">Qué problema resolví</h2>
+      <p class="text-slate-200">
+        El cliente necesitaba controlar reservas y personal sin depender de hojas de cálculo. Se requería acceso seguro,
+        validación de horarios y paneles separados por rol para evitar errores operativos.
+      </p>
+    </section>
 
-    <h2 class="mt-6 font-semibold text-white">Decisiones clave</h2>
-    <ul class="list-disc pl-6 mt-2 text-white">
-      <li>OTP para mejorar conversión y reducir fricción de inicio.</li>
-      <li>Roles claros (cliente/barbero/admin/superadmin) para separar flujos y responsabilidades.</li>
-      <li>Validación de agenda en backend para prevenir solapamientos y mantener integridad.</li>
-      <li>Frontend desacoplado consumiendo API — facilita escalabilidad y pruebas.</li>
-    </ul>
+    <section class="space-y-2">
+      <h2 class="text-xl font-semibold">Trabajo realizado</h2>
+      <ul class="list-disc pl-6 space-y-1 text-slate-100">
+        <li>Diseño de roles y permisos (cliente, barbero, admin, superadmin) con políticas en backend.</li>
+        <li>Flujo de onboarding de barberías con aprobación y alta de barberos.</li>
+        <li>Agenda con validación de solapamientos, buffers y bloqueo de horarios especiales.</li>
+        <li>Notificaciones y autenticación con OTP por teléfono para reducir abandono.</li>
+        <li>Paneles separados: los barberos gestionan su agenda; el admin controla locales, servicios y equipos.</li>
+      </ul>
+    </section>
 
-    <h2 class="mt-6 font-semibold text-white">Por qué no es un CRUD</h2>
-    <p class="text-white mt-2">Incluye flujos de negocio como aprobación de barberías, onboarding de barberos, control de conflictos en horarios y reglas de negocio que superan operaciones básicas.</p>
+    <section class="space-y-2">
+      <h2 class="text-xl font-semibold">Decisiones técnicas</h2>
+      <ul class="list-disc pl-6 space-y-1 text-slate-100">
+        <li>API REST en Laravel con Sanctum; reglas de negocio encapsuladas en policies y form requests.</li>
+        <li>Vue 3 + Vite para un frontend desacoplado, consumo de API tipado y fácil de testear.</li>
+        <li>OTP por WhatsApp/SMS para mejorar conversión frente a contraseñas tradicionales.</li>
+        <li>Validación de agenda en backend para mantener consistencia aunque haya múltiples clientes conectados.</li>
+      </ul>
+    </section>
 
-    <h2 class="mt-6 font-semibold text-white">Enlaces</h2>
-    <p class="mt-2">
-      <a href="#" class="text-amber-300 hover:text-amber-200">Repositorio (si está disponible)</a>
-      <span class="text-slate-400 mx-2">·</span>
-      <a href="#" class="text-amber-300 hover:text-amber-200">Demo / Capturas</a>
-    </p>
+    <section class="space-y-2">
+      <h2 class="text-xl font-semibold">Resultados</h2>
+      <ul class="list-disc pl-6 space-y-1 text-slate-100">
+        <li>Reduje errores de doble reserva gracias a la validación de horarios.</li>
+        <li>Onboarding guiado permitió que nuevas barberías se configuraran sin asistencia técnica.</li>
+        <li>Documenté endpoints y flujos para que otro desarrollador pueda continuar el proyecto.</li>
+      </ul>
+    </section>
 
-    <h2 class="mt-8 font-semibold">Capturas</h2>
-    <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-      <picture>
-        <source srcset="/images/barbora-1.webp" type="image/webp" />
-        <img src="/images/barbora-1.png" alt="Barbora captura 1" class="w-full rounded" />
-      </picture>
+    <section class="space-y-2">
+      <h2 class="text-xl font-semibold">Stack y herramientas</h2>
+      <ul class="list-disc pl-6 space-y-1 text-slate-100">
+        <li>Backend: Laravel, Sanctum, colas para notificaciones.</li>
+        <li>Frontend: Vue 3, Vite, Tailwind CSS.</li>
+        <li>Infra: despliegue en VPS, base de datos MySQL, backups automáticos.</li>
+      </ul>
+    </section>
 
-      <picture>
-        <source srcset="/images/barbora-2.webp" type="image/webp" />
-        <img src="/images/barbora-2.png" alt="Barbora captura 2" class="w-full rounded" />
-      </picture>
+    <section class="space-y-2">
+      <h2 class="text-xl font-semibold">Enlaces</h2>
+      <p>
+        <a href="#" class="text-amber-300 hover:text-amber-200">Repositorio (privado a petición)</a>
+        <span class="text-slate-400 mx-2">·</span>
+        <a href="#" class="text-amber-300 hover:text-amber-200">Demo / Capturas</a>
+      </p>
+    </section>
 
-      <picture>
-        <source srcset="/images/barbora-3.webp" type="image/webp" />
-        <img src="/images/barbora-3.png" alt="Barbora captura 3" class="w-full rounded" />
-      </picture>
+    <section class="space-y-4">
+      <h2 class="text-xl font-semibold">Capturas</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <picture>
+          <source srcset="/images/barbora-1.webp" type="image/webp" />
+          <img src="/images/barbora-1.png" alt="Barbora captura 1" class="w-full rounded" />
+        </picture>
 
-      <picture>
-        <source srcset="/images/barbora-4.webp" type="image/webp" />
-        <img src="/images/barbora-4.png" alt="Barbora captura 4" class="w-full rounded" />
-      </picture>
-    </div>
+        <picture>
+          <source srcset="/images/barbora-2.webp" type="image/webp" />
+          <img src="/images/barbora-2.png" alt="Barbora captura 2" class="w-full rounded" />
+        </picture>
 
-    <h3 class="mt-6 font-semibold">Imagen relacionada (Metaven)</h3>
-    <div class="mt-3">
-      <picture>
-        <source srcset="/images/metaven-hero.webp" type="image/webp" />
-        <img src="/images/metaven-hero.png" alt="Metaven hero" class="w-full rounded" />
-      </picture>
-    </div>
+        <picture>
+          <source srcset="/images/barbora-3.webp" type="image/webp" />
+          <img src="/images/barbora-3.png" alt="Barbora captura 3" class="w-full rounded" />
+        </picture>
+
+        <picture>
+          <source srcset="/images/barbora-4.webp" type="image/webp" />
+          <img src="/images/barbora-4.png" alt="Barbora captura 4" class="w-full rounded" />
+        </picture>
+      </div>
+    </section>
   </article>
 </DefaultLayout>
