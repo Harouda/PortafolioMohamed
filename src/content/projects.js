@@ -10,7 +10,7 @@ export const projects = [
   {
     id: 'metaven',
     title: 'Metaven - Sitio web para negocio local',
-    short: 'Web estática orientada a conversión y SEO local, lista para producción.',
+    short: 'Web estática orientada a conversión y SEO local, con asistente para resolver dudas.',
     image: '/images/metaven-hero.svg',
     path: '/projects/metaven',
     stack: 'HTML + CSS'

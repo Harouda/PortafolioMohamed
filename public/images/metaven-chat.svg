@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="640" viewBox="0 0 500 640">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e2e8f0"/>
+      <stop offset="100%" stop-color="#cbd5e1"/>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="640" rx="24" fill="url(#g)" />
+  <rect x="24" y="24" width="452" height="592" rx="18" fill="#0f172a" opacity="0.08"/>
+  <text x="48" y="96" fill="#111827" font-family="Arial, sans-serif" font-size="32" font-weight="700">Asistente Metaven</text>
+  <text x="48" y="150" fill="#1f2937" font-family="Arial, sans-serif" font-size="22">
+    Coloca aquí la captura real: metaven-chat.png/webp
+  </text>
+  <text x="48" y="200" fill="#475569" font-family="Arial, sans-serif" font-size="20">
+    Vista del chat mostrando el mensaje de bienvenida.
+  </text>
+</svg>
